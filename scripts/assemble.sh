@@ -15,4 +15,4 @@ cp build/rootfs.txz build/assembly/build.txz
 cp configs/nspawn build/assembly/build.txz.nspawn
 cd build/assembly
 sha256sum -b * > SHA256SUMS
-gpg --output SHA256SUMS.gpg --sign SHA256SUMS
+gpg --output SHA256SUMS.gpg --detach-sig SHA256SUMS

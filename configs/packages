@@ -1,0 +1,15 @@
+# Base Packages
+base
+base-devel
+
+# SCM
+git
+
+# Emulation
+qemu
+
+# Compilers
+arm-none-eabi-gcc
+
+# Utilities
+bash-completion

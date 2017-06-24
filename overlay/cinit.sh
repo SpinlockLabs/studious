@@ -13,6 +13,7 @@ function pkgctl() {
 
 pkgctl -R --cascade linux linux-firmware mkinitcpio
 pkgctl -Scc
+rm -rf /var/cache/pacman/pkg
 systemctl enable systemd-networkd systemd-resolved
 umount /etc/resolv.conf >/dev/null 2>&1 || true
 unlink /etc/resolv.conf

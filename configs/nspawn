@@ -1,0 +1,6 @@
+[Files]
+Bind=/usr/src/raptor
+
+[Exec]
+WorkingDirectory=/usr/src/raptor
+

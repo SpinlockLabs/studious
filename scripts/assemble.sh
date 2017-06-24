@@ -12,7 +12,7 @@ fi
 [[ -d build/assembly ]] && rm -rf build/assembly
 mkdir -p build/assembly
 cp build/rootfs.txz build/assembly/build.txz
-cp configs/nspawn build/assembly/build.nspawn
+cp configs/nspawn build/assembly/build.txz.nspawn
 cd build/assembly
 sha256sum * > SHA256SUMS
 gpg --output SHA256SUMS.gpg --sign SHA256SUMS
